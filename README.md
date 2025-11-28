@@ -25,8 +25,8 @@ Foram criados e utilizados scripts interativos em **Bash** e **Python** para aut
 
 | Script | Serviço Alvo | Linguagem | Ação Principal |
 | :--- | :--- | :--- | :--- |
-| `dvwa_bruteforce.py` | Formulário Web (Módulo `http` do Medusa) | Python | Cria listas personalizadas e automatiza o ataque contra o formulário de *login*. |
-| `dvwa_bruteforce.sh` | Formulário Web (Módulo `http` do Medusa) | Bash | Cria listas personalizadas e automatiza o ataque contra o formulário de *login*. |
+| `bf-form.py` | Formulário Web (Módulo `http` do Medusa) | Python | Cria listas personalizadas e automatiza o ataque contra o formulário de *login*. |
+| `bf-form.sh` | Formulário Web (Módulo `http` do Medusa) | Bash | Cria listas personalizadas e automatiza o ataque contra o formulário de *login*. |
 
 ---
 
