@@ -1,4 +1,6 @@
 # BF-FORM 
+Simulações de Força Bruta (DVWA FORM) com Medusa e Mitigações de Segurança
+
 # DevSecOps Lab: Ataque de Força Bruta em Formulário Web (DVWA)
 
 Este repositório documenta um projeto prático que simula e documenta um ataque de **Força Bruta** contra um formulário de *login* de aplicação *web* em um ambiente de laboratório isolado (DVWA), utilizando a ferramenta **Medusa**.
@@ -61,11 +63,12 @@ medusa -h 192.168.15.36 -U users_dvwa.txt -P pass_dvwa.txt -M http \
 -m FORM:'username=^USER^&password=^PASS^&Login=Login' \
 -m 'FAIL=Login failed' -t 6
 
-| Parâmetro |	Tipo | Descrição 
-| -M http	| Módulo | Especifica que a auditoria será feita usando o protocolo HTTP.
-| -m PAGE:'...'	| Payload	| Define a URI específica que recebe a requisição de login POST.
-| -m FORM:'...'	| Payload	| Define a estrutura dos dados POST, onde ^USER^ e ^PASS^ são substituídos pelas entradas das wordlists.
-| -m 'FAIL=...'	| Payload	| A string de erro que o Medusa procura na resposta HTML para determinar que a tentativa de login falhou
+| Parâmetro |	Tipo | Descrição |
+| :--- | :--- |
+| -M http	| Módulo | Especifica que a auditoria será feita usando o protocolo HTTP.|
+| -m PAGE:'...'	| Payload	| Define a URI específica que recebe a requisição de login POST.|
+| -m FORM:'...'	| Payload	| Define a estrutura dos dados POST, onde ^USER^ e ^PASS^ são substituídos pelas entradas das wordlists.|
+| -m 'FAIL=...'	| Payload	| A string de erro que o Medusa procura na resposta HTML para determinar que a tentativa de login falhou.|
 
 ### Objetivo e Ação do Ataque
 
