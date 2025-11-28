@@ -64,7 +64,7 @@ medusa -h 192.168.15.36 -U users_dvwa.txt -P pass_dvwa.txt -M http \
 -m 'FAIL=Login failed' -t 6
 
 | Parâmetro |	Tipo | Descrição |
-| :--- | :--- |
+| :--- | :--- | :--- |
 | -M http	| Módulo | Especifica que a auditoria será feita usando o protocolo HTTP.|
 | -m PAGE:'...'	| Payload	| Define a URI específica que recebe a requisição de login POST.|
 | -m FORM:'...'	| Payload	| Define a estrutura dos dados POST, onde ^USER^ e ^PASS^ são substituídos pelas entradas das wordlists.|
